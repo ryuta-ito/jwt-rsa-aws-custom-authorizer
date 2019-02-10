@@ -7,8 +7,8 @@ module.exports.handler = async (event) => {
     data = await lib.authenticate(event);
   }
   catch (err) {
-      console.log(err);
-      return `Unauthorized: ${err.message}`;
+    console.log(err);
+    return `Unauthorized: ${err.message}`;
   }
   return data;
 };
