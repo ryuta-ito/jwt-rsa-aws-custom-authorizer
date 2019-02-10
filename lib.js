@@ -1,4 +1,4 @@
-require('dotenv').config({ silent: true });
+try { require('dotenv').config({ silent: true }); } catch(e) {}
 
 const jwksClient = require('jwks-rsa');
 const jwt = require('jsonwebtoken');
